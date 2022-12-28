@@ -12,6 +12,10 @@ on:
 permissions:
   contents: read
 
+defaults:
+  run:
+    working-directory: tutorial_1_devops
+
 jobs:
   build:
 
