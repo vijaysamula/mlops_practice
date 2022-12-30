@@ -2,3 +2,5 @@
     remote = gdrive_storage
 ['remote "gdrive_storage"']
     url = gdrive://1vukCi6tKcKIC5yP8pjWBp1RdRVNoU-3L
+['remote "local_repo"']
+    url = ../../dvc_shared
