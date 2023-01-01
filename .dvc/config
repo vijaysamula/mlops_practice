@@ -1,2 +1,0 @@
-['remote "local_repo"']
-    url = ../../dvc_shared
