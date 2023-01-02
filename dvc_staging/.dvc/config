@@ -1,0 +1,4 @@
+[core]
+    remote = local_repo
+['remote "local_repo"']
+    url = ../../dvc_shared
