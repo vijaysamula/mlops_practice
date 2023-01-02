@@ -37,3 +37,22 @@ stages:
       md5: d5fbe33ec032c36504fd584b742519ae.dir
       size: 1556164
       nfiles: 2
+  train:
+    cmd: python3 src/train.py data/features model.pkl
+    deps:
+    - path: data/features/
+      md5: d5fbe33ec032c36504fd584b742519ae.dir
+      size: 1556164
+      nfiles: 2
+    - path: src/train.py
+      md5: c3961d777cfbd7727f9fde4851896006
+      size: 967
+    params:
+      params.yaml:
+        train.min_split: 0.01
+        train.n_est: 100
+        train.seed: 20170428
+    outs:
+    - path: model.pkl
+      md5: 8231dd6884d5c8a8176af1fe3d07acc6
+      size: 3354722
