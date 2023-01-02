@@ -64,7 +64,7 @@ bag_of_words = CountVectorizer(
 
 bag_of_words.fit(train_words)
 train_words_binary_matrix = bag_of_words.transform(train_words)
-feature_names = bag_of_words.get_feature_names_out()
+feature_names = bag_of_words.get_feature_names()
 tfidf = TfidfTransformer(smooth_idf=False)
 tfidf.fit(train_words_binary_matrix)
 train_words_tfidf_matrix = tfidf.transform(train_words_binary_matrix)
